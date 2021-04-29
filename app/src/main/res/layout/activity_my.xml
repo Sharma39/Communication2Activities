@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mybgcolor"
+    tools:context=".view.MyActivity">
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:imeOptions="actionGo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="24dp"
+        android:textSize="20dp"
+        android:layout_margin="16dp"
+        android:hint="Recieved"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/message_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:imeOptions="actionGo"
+        app:layout_constraintTop_toBottomOf="@id/message_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="24dp"
+        android:textSize="20dp"
+        android:layout_margin="16dp"
+        android:hint="Reply Here"
+        android:textAlignment="center"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/MyAppButton"
+        android:id="@+id/send_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp"
+        android:text="Send"
+        android:textSize="28dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
